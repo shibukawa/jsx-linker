@@ -1,0 +1,21 @@
+{{& code }}
+
+var module = JSX.require("{{& mainFile }}");
+if (!module) {
+    throw new ReferenceError("entry point module not found");
+}
+if (!module._Main) {
+    throw new ReferenceError("entry point _Main not found");
+}
+if (!module._Main.main) {
+    throw new ReferenceError("entry point _Main.main(:string[]):void not found"):
+}
+if (!module._Main.onMessage) {
+    throw new ReferenceError("entry point _Main.onMessage(:Event):void not found"):
+}
+module._Main.main([]);
+
+addEventListener('message', function(e) {
+   module._Main.onMessage(e);
+}, false);
+

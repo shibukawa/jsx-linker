@@ -1,0 +1,46 @@
+{
+  "name": "jsx-linker",
+  "version": "0.1.0",
+  "description": "JSX postprocessor to support various environment",
+  "scripts": {
+    "prepublish": "grunt build;grunt doc",
+    "build": "grunt build",
+    "test": "grunt test",
+    "doc": "grunt doc"
+  },
+  "bin": {
+    "jsx-linker": "./bin/jsx-linker"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "jsx",
+    "app"
+  ],
+  "homepage": "https://github.com/shibukawa/jsx-linker",
+  "bugs": {
+    "url": "https://github.com/shibukawa/jsx-linker/issues"
+  },
+  "directories": {
+    "doc": "./doc",
+    "lib": "./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shibukawa/jsx-linker.git"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1",
+    "grunt-jsx": ">=0.1.4",
+    "esprima.jsx": "~0.1.1",
+    "getopt.jsx": "~0.1.0",
+    "hogan.jsx": "~0.1.0"
+  },
+  "author": "shibukawa",
+  "license": "MIT",
+  "dependencies": {
+    "esprima": "~1.0.4"
+  }
+}

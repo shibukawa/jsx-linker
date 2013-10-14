@@ -1,0 +1,6 @@
+{{& code }}
+module.exports = {
+{{# exportItems }}
+        "{{& name }}": JSX.require("{{ filename }}").{{& name }},
+{{/ exportItems }}
+};
