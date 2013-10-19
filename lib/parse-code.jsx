@@ -16,11 +16,14 @@ class ExportItem
 {
     var name : string;
     var filename : string;
+    var filebasename : string;
 
     function constructor(name : string, filename : string)
     {
         this.name = name;
         this.filename = filename;
+        var filebasename = node.path.basename(filename);
+        this.filebasename = filebasename.slice(0, filebasename.indexOf('.'));
     }
 }
 

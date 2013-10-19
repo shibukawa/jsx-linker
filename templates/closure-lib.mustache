@@ -1,9 +1,9 @@
 {{# exportItems }}
-goog.provide("{{& filename }}.{{& name }}");
+goog.provide("{{& filebasename }}.{{& name }}");
 {{/ exportItems }}
 (function () {
 {{& code }}
 {{# exportItems }}
-{{& filename }}.{{& name }} = JSX.require("{{& filename }}").{{& name }};
+{{& filebasename }}.{{& name }} = JSX.require("{{& filename }}").{{& name }};
 {{/ exportItems }}
 })();
