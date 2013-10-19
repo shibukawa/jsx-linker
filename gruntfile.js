@@ -32,13 +32,13 @@ module.exports = function(grunt) {
 
       test: {
         src: ['<%= testDir %>/test*.jsx'],
-        add_search_path: ['<%= libDir %>', '<%= srcDir %>', 'node_modules/esprima.jsx/lib', 'node_moduels/getopt.jsx/lib', 'node_modules/hogan.jsx/lib'],
+        add_search_path: ['<%= libDir %>', '<%= srcDir %>', 'node_modules/esprima.jsx/lib', 'node_modules/getopt.jsx/lib', 'node_modules/hogan.jsx/lib'],
         test: true
       },
 
       doc: {
         src: ['<%= libDir %>/*.jsx', '<%= srcDir %>/*.jsx'],
-        add_search_path: ['<%= libDir %>', '<%= srcDir %>'],
+        add_search_path: ['<%= libDir %>', '<%= srcDir %>', 'node_modules/esprima.jsx/lib', 'node_modules/getopt.jsx/lib', 'node_modules/hogan.jsx/lib'],
         dest: '<%= docDir %>',
         mode: 'doc'
       }

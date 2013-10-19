@@ -1,6 +1,10 @@
 Change History
 =================
 
+## 0.1.3 (2013/10/19)
+
+* Fix build issue.
+
 ## 0.1.2 (2013/10/18)
 
 * Update `webworker`, `amd-lib` template.
