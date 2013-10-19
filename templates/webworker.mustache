@@ -7,15 +7,12 @@ if (!module) {
 if (!module._Main) {
     throw new ReferenceError("entry point _Main not found");
 }
-if (!module._Main.main) {
-    throw new ReferenceError("entry point _Main.main(:string[]):void not found"):
+if (!module._Main.onmessage$LMessageEvent$) {
+    throw new ReferenceError("entry point _Main.onmessage(:Event):void not found");
 }
-if (!module._Main.onMessage) {
-    throw new ReferenceError("entry point _Main.onMessage(:Event):void not found"):
-}
-module._Main.main([]);
-
 addEventListener('message', function(e) {
-   module._Main.onMessage(e);
+    module._Main.onmessage$LMessageEvent$(e);
 }, false);
-
+if (module._Main.main) {
+    module._Main.main([]);
+}

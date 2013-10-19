@@ -19,9 +19,9 @@ Supported Output
 
 You can select the output format with `-t` option. This tool supports the following output formats:
 
-### nodejs-lib, amd-lib
+### commonjs-lib, amd-lib, export-global
 
-Add `exports` or `define` statements. The classes that have an `__export__` qualifier are exported.
+Add `exports` or `define` statements. `export-global` exports classes to global namespace. The classes that have an `__export__` qualifier are exported.
 
 #### Your Library
 
@@ -40,7 +40,7 @@ var Fib = require('fib').Fib;
 Fib.calc(value);
 ```
 
-### extjs-app
+### extjs-app (experimental)
 
 It supports `config` parameter, entry point function (`main`), and callback funcion for updating (`onUpdate`):
 
@@ -97,6 +97,7 @@ class _Main
 ### WebWorker
 
 ```js
+import "js/web.jsx";
 import "webworker.jsx";
 
 class _Main
@@ -106,7 +107,7 @@ class _Main
         // called when this worker is initialized
     }
 
-    static onMessage(event : Event) : void
+    static onmessage(event : MessageEvent) : void
     {
         // called when `postMessage` is called from main script
         WebWorker.postMessage("message");
