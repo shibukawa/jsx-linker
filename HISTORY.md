@@ -1,6 +1,14 @@
 Change History
 =================
 
+## 0.1.5 (2013/11/28)
+
+* Fix webworker template.
+
+## 0.1.4 (2013/10/19)
+
+* Fix closure template.
+
 ## 0.1.3 (2013/10/19)
 
 * Fix build issue.
