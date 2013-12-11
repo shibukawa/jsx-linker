@@ -110,7 +110,7 @@ class _Main
     __export static function onmessage(event : MessageEvent) : void
     {
         // called when `postMessage` is called from main script
-        WebWorker.postMessage("message");
+        self.postMessage("message");
     }
 }
 ```
