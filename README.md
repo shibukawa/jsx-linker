@@ -107,7 +107,7 @@ class _Main
         // called when this worker is initialized
     }
 
-    static onmessage(event : MessageEvent) : void
+    __export static function onmessage(event : MessageEvent) : void
     {
         // called when `postMessage` is called from main script
         WebWorker.postMessage("message");
