@@ -1,6 +1,10 @@
 Change History
 =================
 
+## 0.1.6 (2014/04/10)
+
+* Reduce distribution file size.
+
 ## 0.1.5 (2013/11/28)
 
 * Fix webworker template.

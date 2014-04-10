@@ -1,2 +1,11 @@
 node_modules
 *.tgz
+.travis.yml
+doc/
+src/
+test/
+sample/
+lib/
+.npmignore
+gruntfile.js
+Makefile
