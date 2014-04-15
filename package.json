@@ -1,6 +1,6 @@
 {
   "name": "jsx-linker",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "JSX postprocessor to support various environment",
   "scripts": {
     "prepublish": "grunt build;grunt doc",

@@ -1,6 +1,10 @@
 Change History
 =================
 
+## 0.1.7 (2014/04/15)
+
+* Fix Ext.js template (but still experimental).
+
 ## 0.1.6 (2014/04/10)
 
 * Reduce distribution file size.
